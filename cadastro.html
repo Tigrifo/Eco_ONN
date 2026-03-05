@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+<title>Cadastro de Cliente</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/ecovoltLogo.png">
+</head>
+<body class="darkmode">
+  <div class="header-superior">
+    <div class="logo">
+      <h1 class="nome">EcoVolt</h1>
+      <img src="images/ecovoltLogo.png" alt="Logo EcoVolt" width="50">
+    </div>
+    <div class="botoes-direita">
+      <a href="login.html" class="btn">Login</a>
+      <a href="cadastro.html" class="btn">Cadastrar</a>
+      <button id="botao" onclick="darkMode()" class="darqui">☾ ☀︎</button>
+    </div>
+  </div>
+
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="btn">Inicio</a></li>
+      <li><a href="catalogo.html" class="btn">Catalogo</a></li>
+      <li><a href="contato.html" class="btn">Contato</a></li>
+      <li><a href="sobreNos.html" class="btn">Sobre Nós</a></li>
+    </ul>
+  </nav>
+</header>
+<br> <br>
+<div class="conteudo">
+<form method="POST" action="processarCadastro.php">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input id="caixa" type="text" id="nome" name="nome" required>
+    </div>
+ 
+    <div class="form-group">
+        <label for="Email">Email:</label>
+        <input id="caixa" type="text" id="email" name="email" required>
+    </div>
+ 
+    <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input id="caixa" type="text" id="telefone" name="telefone">
+    </div>
+ 
+    <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input id="caixa" type="text" id="endereco" name="endereco" required>
+    </div>
+
+    <div class="form-group">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+  </div>
+
+    <div class="form-group">
+      <button type="button" id="botaoSenha" onclick="mostrarSenha()">👁️</button>
+        <button type="submit" name="cadastrar">Cadastrar</button>
+        <button type="submit" name="possuo" ><a href="login.html">Já possuo um login</a></button>
+    </div>
+    
+</form>
+<a href="index.html" class="btn">Voltar para o Inicio</a>
+
+</div>
+<footer class="footer">
+  <p>Telefone: 112345-6789</p>
+  <p>© 2025 EcoVolt - Todos os direitos reservados.</p>
+    <p>Email: ecovoltcontato0@gmail.com</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - EcoVolt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/ecovoltLogo.png">
+</head>
+<body class="darkmode">
+  <div class="header-superior">
+    <div class="logo">
+      <h1 class="nome">EcoVolt</h1>
+      <img src="images/ecovoltLogo.png" alt="Logo EcoVolt" width="50">
+    </div>
+    <div class="botoes-direita">
+      <a href="login.html" class="btn">Login</a>
+      <a href="cadastro.html" class="btn">Cadastrar</a>
+      <button id="botao" onclick="darkMode()" class="darqui">☾ ☀︎</button>
+    </div>
+  </div>
+
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="btn">Inicio</a></li>
+      <li><a href="catalogo.html" class="btn">Catalogo</a></li>
+      <li><a href="contato.html" class="btn">Contato</a></li>
+      <li><a href="sobreNos.html" class="btn">Sobre Nós</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="conteudo">
+    <section class="section-contato">
+      <h1>Entre em Contato</h1>
+      <p>Tem dúvidas, sugestões ou precisa de ajuda? Entre em contato conosco!</p>
+      
+      <div class="contato-container">
+        
+        <div class="form-contato">
+            <br> <br>
+          <h2>Envie sua Mensagem</h2>
+          <form action="processarContato.php" method="POST">
+            <div class="form-group">
+                <br> <br>
+              <label for="nome">Nome Completo</label>
+              <input id="caixa" type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input id="caixa" type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="caixa" type="mensagem" name="mensagem" rows="5"   required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-enviar">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+  </div>
+
+  <footer class="footer">
+    <p>Telefone: (11) 2345-6789</p>
+    <p>© 2025 EcoVolt - Todos os direitos reservados.</p>
+    <p>Email: ecovoltcontato0@gmail.com</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
